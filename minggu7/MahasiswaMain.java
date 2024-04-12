@@ -34,7 +34,7 @@ public class MahasiswaMain {
         System.out.println("______________________________________");
         System.out.println("Pencarian Data : ");
         System.out.println("Masukkan Nim Mahasiswa yang dicari: ");
-        System.out.println("NIM : ");
+        System.out.print("NIM : ");
         int cari = s.nextInt();
         System.out.println("menggunakan sequential Search");
         int posisi = data.FindSeqSearch(cari);
@@ -42,6 +42,11 @@ public class MahasiswaMain {
         data.Tampilposisi(cari, posisi);
 
         data.TampilData(cari, posisi);
-        
+
+        System.out.println("====================================");
+        System.out.println("menggunakan binary Search");
+        posisi = data.FindBinarySearch(cari, 0, jumMhs - 1);
+        data.Tampilposisi(cari, posisi);
+        data.TampilData(cari, posisi);
     }
 }
