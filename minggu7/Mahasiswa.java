@@ -1,13 +1,13 @@
 package minggu7;
 
 public class Mahasiswa {
-    int nim;
-    String nama;
+   // int nim;
+    String nama, nim;
     int umur;
     double ipk;
 
     //konstruktor
-    Mahasiswa (int ni, String n, int u, double i) {
+    Mahasiswa (String ni, String n, int u, double i) {
         nim = ni;
         nama = n;
         umur = u;
@@ -19,7 +19,5 @@ public class Mahasiswa {
         System.out.println("Nama = " + nama);
         System.out.println("Umur = " + umur);
         System.out.println("IPK = " + ipk);
-    }
-
-    
+    }   
 }
